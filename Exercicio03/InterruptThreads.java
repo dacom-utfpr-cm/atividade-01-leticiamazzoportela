@@ -23,7 +23,7 @@ public class InterruptThreads extends Thread {
                     final int time = (int) (Math.random() * (max - min + 1) + min);
                     Thread.currentThread();
                     Thread.sleep(time * 1000);
-                    System.out.println("Stop Thread " + tName + " after 5s");
+                    System.out.println("Stop Thread " + tName + " after " + time + "s");
                 } catch (final InterruptedException e) {
                     System.out.println("Interrupting thread " + tName);
                     e.printStackTrace();
