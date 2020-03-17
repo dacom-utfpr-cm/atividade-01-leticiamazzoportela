@@ -1,6 +1,13 @@
-import java.io.*; 
+package Exercicio03;
 
-public class Exercicio03 extends Thread {
+import java.io.*;
+
+/**
+ *  Exercício 03 - InterruptThreads
+ * @author Letícia Mazzo Portela
+ * @since Mar/2020
+ */
+public class InterruptThreads extends Thread {
     public static void runThreeThreads() {
         final int min = 3;
         final int max = 10;
@@ -50,6 +57,7 @@ public class Exercicio03 extends Thread {
                     e.printStackTrace();
                 } catch (final FileNotFoundException e) {
                     e.printStackTrace();
+                    break;
                 } catch (final IOException e) {
                     e.printStackTrace();
                 }

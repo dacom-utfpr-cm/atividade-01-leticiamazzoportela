@@ -1,6 +1,14 @@
+package Exercicio02;
+
 import java.io.*;
 
-public class Exercicio02 {
+
+/**
+ *  Exercício 02 - ReadFileThread
+ * @author Letícia Mazzo Portela
+ * @since Mar/2020
+ */
+public class ReadFileThread {
     public static void main(final String[] args) throws Exception {
         final Thread t = new Thread(() -> {
             System.out.println("Start Thread " + Thread.currentThread().getName());
@@ -22,6 +30,7 @@ public class Exercicio02 {
                     e.printStackTrace();
                 } catch (final FileNotFoundException e) {
                     e.printStackTrace();
+                    break;
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

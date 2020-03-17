@@ -1,4 +1,12 @@
-public class Exercicio01 extends Thread {
+package Exercicio01;
+
+/**
+ * Exercício 01 - ThreeThreads
+ * 
+ * @author Letícia Mazzo Portela
+ * @since Mar/2020
+ */
+public class ThreeThreads extends Thread {
 
     public static void main(final String[] args) {
         int min = 3;
@@ -15,7 +23,7 @@ public class Exercicio01 extends Thread {
                     int time = (int)(Math.random() * (max - min + 1) + min);
                     Thread.currentThread();
                     Thread.sleep(time * 1000);
-                    System.out.println("Stop Thread after 5s");
+                    System.out.println("Stop Thread after " + time + "s");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
