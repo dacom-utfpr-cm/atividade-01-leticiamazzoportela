@@ -1,4 +1,5 @@
-import java.io.*; 
+import java.io.*;
+
 public class Exercicio02 {
     public static void main(final String[] args) throws Exception {
         final Thread t = new Thread(() -> {

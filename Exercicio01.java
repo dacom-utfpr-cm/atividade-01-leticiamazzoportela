@@ -8,7 +8,8 @@ public class Exercicio01 extends Thread {
             System.out.println("Executing Thread " + i);
 
             final Thread t = new Thread(() -> {
-                System.out.println("Start Thread " + Thread.currentThread().getName());
+                String tName = Thread.currentThread().getName();
+                System.out.println("Start Thread " + tName);
                 
                 try {
                     int time = (int)(Math.random() * (max - min + 1) + min);
